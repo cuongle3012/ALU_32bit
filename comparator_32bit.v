@@ -18,7 +18,7 @@ module comparator_32bit
 
 wire [31:0] lt_i, eq_i, gt_i;
 
-comparator_1bit cmp_inst0 (.a(a[0]),.a(a[0]),.lt_i(1'b0),.eq_i(1'b1),.gt_i(1'b0),.lt_o(lt_i[0]),.eq_o(eq_i[0]),.gt_o(gt_i[0])); 
+	comparator_1bit cmp_inst0 (.a(a[0]),.b(b[0]),.lt_i(1'b0),.eq_i(1'b1),.gt_i(1'b0),.lt_o(lt_i[0]),.eq_o(eq_i[0]),.gt_o(gt_i[0])); 
 
 genvar i;
 generate
